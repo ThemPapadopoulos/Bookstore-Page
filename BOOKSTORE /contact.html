@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <title>Contact Page</title>
+</head>
+
+<body>
+
+  <!---------------- FULLSCREEN MENU -------------------->
+  <ul class="menu" id="fullscrn"></ul>
+
+  <!---------------- MOBILE MENU -------------------->
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="home.html" class="active">Αρχική</a>
+      <div id="myLinks">
+        <a href="shop.html">Κατάστημα</a>
+        <a href="contact.html">Επικοινωνία</a>
+        <a href="about.html">Εταιρία</a>
+        <a  class="cart">Καλάθι <i class="fa fa-shopping-cart"></i></a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+  <header>
+    <h1>Καλωσήλθατε στο Βιβλιοπωλείο μας!</h1>
+  </header>
+
+        <!---CART --------------------->
+        <div class="overlay hidden" id="overlay">
+          <!-- close button nav -->
+          <button class="closebtn">&times;</button>
+    
+          <div class="overlay-content" id="copied">
+            <div id="shoppingCart">
+              <!-- INPUT LINES-->
+    
+              <ol id="myList"></ol>
+    
+              <p>Total Cost: <span id="total"></span> <span> Euro</span</p>
+              <button id="complete">Ολοκλήρωση<br>Αγοράς</button>
+            </div>
+          </div>
+        </div>
+  
+
+<!-------contact form-->
+<div id="full_width">
+ <h1 id="title" class="full width">Contact Form</h1>
+    <br>
+         <p id="description">
+               Please complete the following form
+         </p>
+   
+         <hr >
+         
+         <form id="survey-form" >  
+               
+               <label class="name" id="name-label">Name
+                     <input type="text" id="name" placeholder="Name" required></input>
+               </label>
+        <br>
+               
+               <label id="email-label">email
+                     <input type="email" id="email" placeholder="email" required></input>
+               </label>
+         
+         <br>
+               <label id="number-label">How happy you were from our services (1 to 10)
+                     <input type="number" id="number" placeholder="number" min="1" max="10" required></input>
+               </label>
+               <br>
+               
+   <!--Dropdown Menu-->
+   
+               <label for="age">Whats your Age:</label>
+   
+               <select name="age" id="dropdown">
+                 <option value="agerange1">18-34</option>
+                 <option value="agerange2">35-49</option>
+                 <option value="agerange3">50+</option>
+               </select>
+          
+   
+   <br>
+   <!--Text area-->
+         <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your message here">
+   
+         </textarea>
+   <!--radio buttons-->
+   
+         <h4 style="color: orange;">Do you want to receive more news and updates about us? </h4>  
+         
+          <label for="Yes"> 
+                      <input id="indoor" type="radio" name="indoor-outdoor" value="1">Yes
+                </label>
+                <label for="No"> 
+                      <input id="No" type="radio" name="indoor-outdoor" value="2">No
+                </label>
+   <!--checkbox buttons-->
+          <h4 style="color: orange;">How did you learned about us? </h4>
+                <label for="google"> 
+                      <input id="google" type="checkbox" name="google" value="3">Google
+                </label>   
+                <label for="socialmedia"> 
+                      <input id="socialmedia" type="checkbox" name="socialmedia" value="4">Social Media
+                </label>   
+                <label for="friends"> 
+                      <input id="friends" type="checkbox" name="friends" value="5">Friends
+                </label>   
+         <br>
+         <br>
+   <!--Submit button-->
+         <button type="submit" id="submit" class="center1">submit</button>
+         
+   </form>
+  </div>
+         <hr>
+    <a href="home.html" class="previous">
+      <button class="btngoback">
+        &#8249;Go back
+      </button></a>
+     
+      <script src="storeindex.js"></script>
+    <script src="fullmenu.js"></script>
+  </body>
+  
+  </html>

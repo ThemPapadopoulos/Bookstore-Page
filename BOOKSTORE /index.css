@@ -1,0 +1,441 @@
+/*! universal */
+
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*opacity: 95%;*/
+  margin-right: 0;
+}
+h1 {
+  color: whitesmoke;
+}
+.hidden {
+	display: none !important;
+}
+
+body {
+  background: #555;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+  margin-top: 10vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+/*! main PAGE*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  height: 60vh;
+  background-image: url("images/bstore.jpg");
+  background-size: cover;
+  width: 100vw;
+  font-size: 20px;
+  margin-right: 0;
+}
+image {
+  width: fit-content;
+  height: auto;
+}
+article {
+  
+  padding: 5vw;
+  margin: 0;
+  width: fit-content;
+}
+
+.sub1 {
+  background-color: #555;
+  color: #f1f1f1;
+}
+.sub2 {
+  color: #555;
+  background-color: rgb(255, 89, 0);
+}
+.sub3 {
+  background-color: #555;
+  color: #f1f1f1;
+}
+
+/*! about page*/
+
+.container p{
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
+  width: 60%;
+  background-color: rgb(255, 89, 0);
+}
+/*! BOOK PAGE */
+
+.books {
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  display: inline;
+  padding: 2%;
+  outline: auto;
+  height: 30vh;
+  width: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+  margin: 10px;
+  
+}
+.books li:nth-of-type(1){
+  background-image: url('https://www.linkpicture.com/q/images-1_134.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.books li:nth-of-type(2){
+  background-image: url('https://www.linkpicture.com/q/images2.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.books li:nth-of-type(3){
+  background-image: url('https://www.linkpicture.com/q/images3.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.books li:nth-of-type(4){
+  background-image: url('https://www.linkpicture.com/q/images4.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.buybutton, #submit {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  background-color: #f1f1f1;
+	color:  rgb(255, 89, 0);
+  cursor: pointer;
+  
+}
+.buybutton:hover, #submit:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+
+.buybutton:hover {
+  background-color: #555;
+  color: white;
+}
+/*!    FOOTER   */
+
+footer {
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  width: 10%;
+  background-color: black;
+  color: white;
+  left: 0;
+}
+
+/*! GO BACK BUTTON */
+
+.btngoback {
+  position: fixed;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f1f1f1;
+  color: black;
+  width: 50%;
+  bottom: 0;
+}
+
+.btngoback:hover {
+  background-color: #555;
+  color: white;
+}
+
+/*! FULLSCREEN NAVBAR */
+#fullscrn {
+  position: fixed;
+  list-style-type: none;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000;
+  opacity: 95;
+  width: 100%;
+}
+.contact,.about,.home,.cart,.shop {
+  background-color: black;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+}
+.contact:hover,.about:hover,.home:hover,.cart:hover,.shop:hover{
+  background-color: rgb(255, 89, 0);
+
+
+}
+
+
+#fullscrn li {
+  float: left;
+}
+
+/*!----- CART MENU -----------*/
+
+.overlay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 70%;
+  width: 30%;
+  position: fixed;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: white;
+  overflow-x: hidden;
+  color: #000;
+  border-radius: 10px;
+}
+h4 {
+  width: 80%;
+}
+#complete{
+  background-color: black;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+#complete:hover{
+  background-color: rgb(255, 89, 0);
+}
+
+#myList {
+  grid-column: 1;
+}
+.overlay-content {
+  
+  position: relative;
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.cart-listItem {
+  justify-content: space-between;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+	color: #818181;
+	border: none;
+  background: white;
+  cursor: pointer;
+  padding: 20px;
+}
+
+
+.deletebutton, .deletebutton_cart-btn-2, .deletebutton_cart-btn-3, .deletebutton_cart-btn-4 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 1px;
+  background-color: #f1f1f1;
+  color: red;
+  text-align: center;
+  right: 0;
+  grid-column: 2;
+}
+
+
+
+/*! contact form   */
+#full_width{
+  display: grid;
+  background-color: #555;
+  color: #f1f1f1;
+text-align: center;
+justify-content: center;
+align-items: center;
+}
+.full-width {
+  width: 100%;
+  background: lightgray;
+}
+
+.center{
+  color: white;
+  text-align: center;
+  background-color: burlywood;
+}
+
+.center1{
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+
+#survey-form {
+  
+      width: fit-content;
+      text-align: center;
+      font-size: larger;
+}
+
+
+/*! HIDDEN BURGER FULLSCREEN*/
+.mobile-container {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  /*! HIDDEN NAVBAR MOBILE */
+  #fullscrn {
+    display: none;
+  }
+
+  /*! BURGER MENU */
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    top: 0;
+    background: white;
+    background-size: cover;
+    
+    font-size: 16px;
+    margin: 0;
+ 
+  }
+
+  .mobile-container {
+    display: initial;
+    margin: 0;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a, button {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a.icon, button.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(255, 89, 0);
+    color: black;
+  }
+
+  .active {
+    background-color: rgb(255, 89, 0);
+    color: white;
+  }
+
+  /*! MOBILE CART */
+
+  .overlay {
+    height: 70%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  text-align: center;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: #000;
+  border-radius: 10px;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #818181;
+    cursor: pointer;
+  }
+
+  .closebtn:hover {
+    color: #f1f1f1;
+  }
+}
+
+/*! mobile shop page */
+.books {
+ 
+  display: grid;
+  justify-content: center;
+  width: 80%;
+
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 0;
+  
+}
+
+.card {
+  display: inline;
+  padding: 2%;
+  outline: auto;
+  height: auto;
+  width: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 5px 5px black;
+  margin: 5px;
+}
+/*! about page*/
+
+.container p{
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  width: 60%;
+  background-color: rgb(255, 89, 0);
+}

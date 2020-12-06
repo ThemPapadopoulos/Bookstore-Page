@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <!---------------- FULLSCREEN MENU -------------------->
+    <ul class="menu" id="fullscrn"></ul>
+
+    <!---------------- MOBILE MENU -------------------->
+    <div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <a href="home.html" class="active">Αρχική</a>
+        <div id="myLinks">
+          <a href="shop.html">Κατάστημα</a>
+          <a href="contact.html">Επικοινωνία</a>
+          <a href="about.html">Εταιρία</a>
+          <a class="cart">Καλάθι <i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <header>
+      <h1>Καλωσήλθατε στο Βιβλιοπωλείο μας!</h1>
+    </header>
+
+
+        <!---CART --------------------->
+        <div class="overlay hidden" id="overlay">
+          <!-- close button nav -->
+          <button class="closebtn">&times;</button>
+    
+          <div class="overlay-content" id="copied">
+            <div id="shoppingCart">
+              <!-- INPUT LINES-->
+    
+              <ol id="myList"></ol>
+    
+              <p>Total Cost: <span id="total"></span> <span> Euro</span</p>
+              <button id="complete">Ολοκλήρωση<br>Αγοράς</button>
+            </div>
+          </div>
+        </div>
+    <!----------------------  LOREM SECTIONS    -------------->
+    <div class="container"></div>
+
+    <article class="sub1">
+      <h3 class="h3a">Section 1</h3>
+      <img src="/images/images3.jpeg" alt="images3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facere,
+        itaque alias accusamus iure, repellendus assumenda minima cumque eos
+        quos tempora error! Soluta quia alias, distinctio perferendis ab nobis
+        fugiat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio
+        corporis rem earum, non maxime quo dolorem. Cum iure neque quibusdam
+        odio laudantium id pariatur incidunt dignissimos deserunt, blanditiis
+        obcaecati vitae.
+      </p>
+    </article>
+
+    <article class="sub2">
+      <img src="/images/images3.jpeg" alt="images3">
+      <h3 class="h3a">Section 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facere,
+        itaque alias accusamus iure, repellendus assumenda minima cumque eos
+        quos tempora error! Soluta quia alias, distinctio perferendis ab nobis
+        fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias quod quos in, excepturi deserunt odit blanditiis officiis
+        rerum soluta similique, consequatur, quasi voluptatibus temporibus a sed
+        consectetur placeat quidem quae?
+      </p>
+    </article>
+
+    <article class="sub3">
+      <img src="/images/images3.jpeg" alt="images3">
+      <h3 class="h3a">Section 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde facere,
+        itaque alias accusamus iure, repellendus assumenda minima cumque eos
+        quos tempora error! Soluta quia alias, distinctio perferendis ab nobis
+        fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Molestias quod quos in, excepturi deserunt odit blanditiis officiis
+        rerum soluta similique, consequatur, quasi voluptatibus temporibus a sed
+        consectetur placeat quidem quae?
+      </p>
+    </article>
+
+    <a href="home.html" class="previous">
+      <button class="btngoback">&#8249;Go back</button></a
+    >
+
+    <script src="storeindex.js"></script>
+    <script src="fullmenu.js"></script>
+  </body>
+</html>
