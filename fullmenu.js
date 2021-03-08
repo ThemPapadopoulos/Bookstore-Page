@@ -85,7 +85,7 @@ window.addEventListener("load", () => {
     });
 
     $(".home").click(function () {
-      window.location.href = "home.html";
+      window.location.href = "index.html";
     });
 
     $(".shop").click(function () {
