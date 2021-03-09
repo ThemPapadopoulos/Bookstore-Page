@@ -1,12 +1,12 @@
-function createElement(elementType, className, title, children) {
-  const element = document.createElement(elementType);
-  element.className = className;
-  if (title) {
-    element.innerHTML = title;
-  }
+// function createElement(elementType, className, title, children) {
+//   const element = document.createElement(elementType);
+//   element.className = className;
+//   if (title) {
+//     element.innerHTML = title;
+//   }
 
-  return element;
-}
+//   return element;
+// }
 
 function addCartListener(button) {
   button.addEventListener("click", () => {
