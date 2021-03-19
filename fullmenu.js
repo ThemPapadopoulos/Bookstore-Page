@@ -1,18 +1,8 @@
-// function createElement(elementType, className, title, children) {
-//   const element = document.createElement(elementType);
-//   element.className = className;
-//   if (title) {
-//     element.innerHTML = title;
-//   }
-
-//   return element;
-// }
-
 function addCartListener(button) {
   button.addEventListener("click", () => {
     const overlayElement = document.querySelector("#overlay");
 
-    // elegxos an uparxei i class tin vgazw alliws tin vazw
+    // check if contains the classlist hidden
     if (overlayElement.classList.contains("hidden")) {
       overlayElement.classList.remove("hidden");
     } else {
@@ -96,11 +86,9 @@ window.addEventListener("load", () => {
       window.location.href = "contact.html";
     });
 
-    // vazoume ta elements to ena katw apo to allo
-
+    // append the elements
     menuSection.append(menuElement);
     menuElement.append(button);
-    //.id = "cart";
   });
   const overlayElement = document.querySelector("#overlay");
   // overlayElemen
@@ -110,7 +98,7 @@ window.addEventListener("load", () => {
   overlayCloseButton.addEventListener("click", () => {
     const overlayElement = document.querySelector("#overlay");
 
-    // elegxos an uparxei i class tin vgazw alliws tin vazw
+    // check if contains the classlist hidden
     if (!overlayElement.classList.contains("hidden")) {
       overlayElement.classList.add("hidden");
     }
@@ -118,7 +106,7 @@ window.addEventListener("load", () => {
 });
 
 function show(shown, hidden) {
-  document.getElementById(shown).style.display='block';
-  document.getElementById(hidden).style.display='none';
+  document.getElementById(shown).style.display = "block";
+  document.getElementById(hidden).style.display = "none";
   return false;
 }
